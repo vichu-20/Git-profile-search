@@ -1,38 +1,383 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 12, 36);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    width: 60vw;
+    border-radius: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Title-div {
+    height: 10vh;
+    width: 55vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.Name {
+    color: white;
+    font-size: 40px;
+    margin-left: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Mode {
+    color: white;
+    font-size: 25px;
+    margin-right: 2rem;
+}
+
+.Search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 55vw;
+    background-color: rgb(0, 29, 85);
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+.Search>img {
+    margin-left: 2rem;
+}
+
+.Search-bar {
+    height: 10vh;
+    width: 35vw;
+    background-color: transparent;
+    border: none;
+}
+
+.Search-bar:focus {
+    outline: none;
+}
+
+.Search-bar::-webkit-input-placeholder {
+    font-size: 20px;
+    color: grey;
+}
+
+.Button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(38, 106, 253);
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin-right: .5rem;
+    height: 80%;
+    width: 13%;
+    border-radius: 10px;
+}
+
+.Profile {
+    height: 50vh;
+    width: 55vw;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 29, 85);
+    border-radius: 20px;
+}
+
+.Profile-photo {
+    height: 45vh;
+    width: 15vw;
+    margin-left: 1rem;
+    margin-top: .5rem;
+}
+
+.Profile-pic {
+    margin-top: 2rem;
+    height: 45%;
+    width: 70%;
+    border-radius: 80%;
+}
+
+.Profile-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    height: 45vh;
+    width: 35vw;
+    margin-top: .5rem;
+    margin-left: 2rem;
+}
+
+.Details-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 15%;
+    width: 100%;
+    ;
+}
+
+.Title {
+    font-size: 30px;
+    color: white;
+    margin-left: 1rem;
+    font-weight: 500;
+}
+
+.Joined {
+    color: white;
+    margin-right: 1rem;
+}
+
+.Username-div {
+    height: 10%;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Username {
+    align-items: flex-start;
+    color: rgb(38, 106, 253);
+    margin-left: 1rem;
+    font-size: 20px;
+}
+
+.Bio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 20%;
+    width: 100%;
+}
+
+.Bio-text {
+    color: grey;
+    margin-left: 1rem;
+}
+
+.Profile-info {
+    height: 25%;
+    width: 80%;
+    background-color: rgb(0, 12, 36);
+    margin-left: 4rem;
+    border-radius: 20px;
+}
+
+.Info-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50%;
+    width: 90%;
+    margin-left: 1.5rem;
+}
+
+.info {
+    font-size: 30px;
+    color: white;
+}
+
+.Count {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50%;
+    width: 90%;
+    margin-left: 1rem;
+}
+
+.number {
+    font-size: 25px;
+    color: white;
+}
+
+.Accounts {
+    height: 25%;
+    width: 80%;
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+
+.Location {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item {
+    font-size: 20px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: azure;
+}
+
+.Link {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon {
+    margin-right: 1rem;
+}
+
+@media (max-width:600px) {
+    .Main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(0, 12, 36);
+    }
+    .Header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+        width: 60vw;
+        border-radius: 20px;
+    }
+    .Title-div {
+        height: 10vh;
+        width: 95vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+    .Name {
+        color: white;
+        font-size: 30px;
+    }
+    .Mode {
+        color: white;
+        font-size: 15px;
+        margin-right: 2rem;
+    }
+    .Search {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 10vh;
+        width: 95vw;
+        background-color: rgb(0, 29, 85);
+        border: none;
+        border-radius: 20px;
+        margin-bottom: 1rem;
+    }
+    .Search-bar {
+        height: 10vh;
+        width: 65vw;
+        background-color: transparent;
+        border: none;
+    }
+    .Search-bar::-webkit-input-placeholder {
+        font-size: 70px;
+        color: grey;
+    }
+    .Button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: rgb(38, 106, 253);
+        border: none;
+        color: white;
+        font-size: 20px;
+        margin-right: .5rem;
+        height: 80%;
+        width: 20%;
+        border-radius: 10px;
+    }
+    .Profile {
+        height: 50vh;
+        width: 95vw;
+        display: flex;
+        flex-direction: rows;
+        background-color: rgb(0, 29, 85);
+        border-radius: 20px;
+    }
+    .Profile-photo {
+        height: 45vh;
+        width: 15vw;
+        margin-left: 1rem;
+        margin-top: .5rem;
+    }
+    .Profile-pic {
+        margin-top: 2rem;
+        height: 20vh;
+        width: 20vh;
+        border-radius: 80%;
+    }
+    .Profile-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        height: 45vh;
+        width: 35vw;
+        margin-top: .5rem;
+        margin-left: 2rem;
+    }
+    .Details-name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 30%;
+        width: 40vw;
+        ;
+    }
+    .Title {
+        font-size: 30px;
+        color: white;
+        margin-left: 1rem;
+        font-weight: 500;
+    }
+    .Joined {
+        color: white;
+        margin-right: 1rem;
+    }
+    .Username-div {
+        height: 10%;
+        width: 20%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
 }
