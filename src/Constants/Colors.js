@@ -8,4 +8,12 @@ const Colors={
        
     },
     lightmode:{
-        background:"rgb(232, 229, 229)"
+        background:"rgb(232, 229, 229)",
+        search:"rgb(255, 255, 255)",
+        profile:"rgb(255, 255, 255)",
+        details:"rgb(232, 229, 229)",
+        text:"black",
+       
+    }
+}
+export default Colors
