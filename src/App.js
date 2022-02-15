@@ -90,7 +90,7 @@ function App() {
                 <div className='Link'>
                   <div className='item'>
                   <img className='icon' src={Website}/>
-                  <a style={{color:darkmode?Colors.darkmode.text :Colors.lightmode.text}} >{profile.blog == (null | "") ? "Not available": profile.blog}</a>
+                  <a style={{color:darkmode?Colors.darkmode.text :Colors.lightmode.text}} >{profile?.blog ?? "Not available"}</a>
                   </div>
                  <div className='item'>
                  <img className='icon' src={Company}/>
