@@ -33,14 +33,15 @@ function App() {
         <div className='Header'>
           <div className='Title-div'>
             <span  className='Name'  style={{color:darkmode?Colors.darkmode.text :Colors.lightmode.text}}>DevFinder</span>
-            <span 
+            <div 
              style={{color:darkmode?Colors.darkmode.text :Colors.lightmode.text}}
-              onClick={()=>setDarkmode(!darkmode)} className='Mode'>LIGHT</span>
+              onClick={()=>setDarkmode(!darkmode)} className='Mode'>LIGHT
+              </div>
           </div>
           <div style={{backgroundColor:darkmode?Colors.darkmode.search :Colors.lightmode.search}}
           className='Search'>
             <img src={Search_icon}/>
-            <input className='Search-bar' type="text" onChange={(event)=>{
+            <input style={{color:darkmode?Colors.darkmode.text :Colors.lightmode.text}} className='Search-bar' type="text" onChange={(event)=>{
               setSearch(event.target.value);
             } } placeholder='Search GitHub user...' />
             <div onClick={()=>getprofile()} className='Button'>Search</div>
